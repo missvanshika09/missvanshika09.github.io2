@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Preview</title>
+    <style>
+        body {
+            background-color: #282c34;
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            user-select: none; /* Prevent text selection */
+        }
+        pre {
+            background: #1e1e1e;
+            color: #00ff00;
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+    <script>
+        document.addEventListener("contextmenu", function(event) {
+            event.preventDefault(); // Disable right-click
+        });
+        document.addEventListener("keydown", function(event) {
+            if (event.ctrlKey && (event.key === "c" || event.key === "u" || event.key === "s")) {
+                event.preventDefault(); // Disable Ctrl+C, Ctrl+U, Ctrl+S
+            }
+        });
+    </script>
+</head>
+<body>
+    <h1>Code Preview (Read-Only)</h1>
+    <pre>
+        function helloWorld() {
+            console.log("Hello, world!");
+        }
+    </pre>
+</body>
+</html>
