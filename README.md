@@ -17,4 +17,4 @@ Mini Calendar is a web-based calendar developed using **HTML, CSS, and JavaScrip
 ## How to Run  
 1. Clone the repository:  
    ```sh
-   git clone https://github.com/yourusername/minni-calender.git
+   git clone https://github.com/missvanshika09/missvanshika09.github.io2.git
